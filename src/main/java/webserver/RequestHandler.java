@@ -47,7 +47,7 @@ public class RequestHandler extends Thread {
             //1번째 줄 : 요청방식, 요청 URL, 프로토콜, 버전 (공백으로 나뉨)
             String line = reader.readLine();
 
-            //헤어가 null 일 경우 응답안함
+            //헤더가 null 일 경우 응답안함
             if (line == null) {
                 return;
             }
